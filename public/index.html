@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AMP Dashboard</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div>
+          <div class="title">
+            <h1>PDF reader</h1>
+          </div>
+          <div class="pdf-options">
+            <button onclick="loadPDF('herbert-marcuse-negations-1.pdf')">
+              herbert marcuse
+            </button>
+            <button
+              onclick="loadPDF('vivek-chibber-rescuing-class-from-the-cultural-turn.pdf')"
+            >
+              vivek chibber
+            </button>
+            <button
+              onclick="loadPDF('bell-hooks-all-about-love-new-visions-1.pdf')"
+            >
+              bell hooks
+            </button>
+            <button
+              onclick="loadPDF('sara-ahmed-the-feminist-killjoy-handbook-the-radical-potential-of-getting-in-the-way.pdf')"
+            >
+              sara ahmed
+            </button>
+          </div>
+        </div>
+        <div class="radio">
+          <div class="radio-container">
+            <div>
+              <h1 class="radio-title">
+                radio
+                <span class="material-symbols-outlined nts-symbol">
+                  play_circle
+                </span>
+              </h1>
+            </div>
+            <div class="player">
+              <button id="playNTS">
+                NTS
+                <span class="material-symbols-outlined nts-symbol">
+                  play_circle
+                </span>
+              </button>
+            </div>
+            <div class="player">
+              <button id="playCJLO">
+                CJLO
+                <span class="material-symbols-outlined cjlo-symbol">
+                  play_circle
+                </span>
+              </button>
+            </div>
+
+            <div class="player">
+              <button id="playWNYC">
+                WNYC
+                <span class="material-symbols-outlined wnyc-symbol">
+                  play_circle
+                </span>
+              </button>
+            </div>
+
+            <input
+              type="range"
+              id="volumeSlider"
+              min="0"
+              max="1"
+              step="0.1"
+              value="1"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="main pdf-viewer">
+        <embed
+          class="pdf"
+          src="./pdfs/bell-hooks-all-about-love-new-visions-1.pdf"
+        />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
