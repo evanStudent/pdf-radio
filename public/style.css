@@ -19,7 +19,7 @@ body {
 
 .header {
     height: 100vh;
-    width: 30vw;
+    width: 15vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -29,7 +29,7 @@ body {
 
 .main {
     height: 100vh;
-    width: 70vw; 
+    width: 85vw; 
 }
 
 .title {
@@ -60,8 +60,12 @@ body {
 }
 
 .pdf {
-    width: 70vw;
+    width: 100%;
     height: 100vh;
+}
+
+.pdf-viewer {
+    width: 100%;
 }
 
 
@@ -84,5 +88,11 @@ button {
 
 h1 {
     color: white;
+}
+
+embed 
+{
+    width: 100%;
+    width: 85vw;
 }
 
